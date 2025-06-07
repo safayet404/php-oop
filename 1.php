@@ -5,7 +5,7 @@ class Human{
     public $age;
 
     function __construct($name, $age = 0){
-        echo "A new human is birthhhhh!\n";
+        echo "A new human is born!\n";
         $this->name = $name;
         $this->age = $age;
     }
