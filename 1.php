@@ -5,13 +5,13 @@ class Human{
     public $age;
 
     function __construct($name, $age = 0){
-        echo "A new human is born!\n";
+        echo "A new human is birthhhhh!\n";
         $this->name = $name;
         $this->age = $age;
     }
 
     function sayHi(){
-        echo "Salam\n";
+        echo "Salamatzisba\n";
         $this->getName();
     }
 
