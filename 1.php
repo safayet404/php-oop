@@ -21,7 +21,7 @@ class Human{
 
             echo "My name is {$this->name} and i am {$this->age} years old\n";
         }else{
-            echo "My name is {$this->name} and I am a baby\n";
+            echo "My name is {$this->name} and I am a puppy\n";
         }
     }
 }
