@@ -28,13 +28,13 @@ class Human{
 
 class Cat{
     function sayHi(){
-        echo "Meow\n";
+        echo "Meooooow\n";
     }
 }
 
 class Dog{
     function sayHi(){
-        echo "Wooof\n";
+        echo "Woooooooooooof\n";
     }
 }
 
