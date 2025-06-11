@@ -38,8 +38,8 @@ class Dog{
     }
 }
 
-$h1 = new Human("Federic Valverde", 25);
-$h2 = new Human("Cristiano Ronaldo - Ronaldo", 36);
+$h1 = new Human("Federic Valverde - Uruguay", 25);
+$h2 = new Human("Cristiano Ronaldo - Portugal", 36);
 $h3 = new Human("Arda Guler - Turkey", 20);
 
 $c1 = new Cat();
