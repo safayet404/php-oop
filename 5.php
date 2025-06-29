@@ -10,7 +10,7 @@ class Shape{
     }
 
     public function getArea(){
-        echo " this {$this->name} area is  {$this->area}";
+        echo " this value {$this->name} area is  {$this->area}";
     }
 
     public function calculateArea(){}
