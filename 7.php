@@ -10,7 +10,7 @@ abstract class OurClass{
 class MyClass extends OurClass{
 
     public function greet(){
-        echo "hello from abstract classses";
+        echo "hello from abstract class";
     }
 
 }
