@@ -57,3 +57,4 @@ $myColor->readRGB();
 
  $myColor->getBlue();
 print_r($myColor->getRGB());
+echo json_encode($myColor->getRGB());
