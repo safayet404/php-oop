@@ -7,7 +7,7 @@ class Human{
         $this->getName();
     }
 
-    function getName(){
+    private function getName(){
         echo "My name is {$this->name}\n";
     }
 }
