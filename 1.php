@@ -2,6 +2,12 @@
 
 class Human{
     public $name;
+
+    function __construct($name){
+        echo "A new human is born!\n";
+        $this->name = $name;
+    }
+
     function sayHi(){
         echo "Salam\n";
         $this->getName();
@@ -24,10 +30,9 @@ class Dog{
     }
 }
 
-$h1 = new Human();
-$h2 = new Human();
-$h1->name = "Rubel";
-$h2->name = "Virgil Van Dijk";
+$h1 = new Human("Federic Valverde");
+$h2 = new Human("Cristiano Ronaldo");
+
 $c1 = new Cat();
 $d1 = new Dog();
 
