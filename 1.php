@@ -4,6 +4,7 @@ class Human{
     public $name;
     function sayHi(){
         echo "Salam\n";
+        $this->getName();
     }
 
     function getName(){
@@ -24,11 +25,14 @@ class Dog{
 }
 
 $h1 = new Human();
+$h2 = new Human();
 $h1->name = "Rubel";
+$h2->name = "Virgil Van Dijk";
 $c1 = new Cat();
 $d1 = new Dog();
 
 $h1->sayHi();
-$h1->getName();
+$h2->sayHi();
+
 $c1->sayHi();
 $d1->sayHi();
