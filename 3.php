@@ -26,6 +26,11 @@ class RGB{
         echo "Red : {$this->red}\nGreen : {$this->green}\nBlue : {$this->blue} \n";
     }
 
+        function getRGB()
+    {
+        return array($this->red,$this->green,$this->blue);
+    }
+
     private function parseColor(){
        list($this->red, $this->green,$this->blue) = sscanf($this->color,'%02x%02x%02x');
     }
@@ -51,4 +56,4 @@ $myColor = new RGB("#ffef27");
 $myColor->readRGB();
 
  $myColor->getBlue();
-
+print_r($myColor->getRGB());
