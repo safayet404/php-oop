@@ -3,6 +3,13 @@
 
 
 class Animal{
+
+    public $name;
+
+    function __construct($name)
+    {
+        $this->name = $name;
+    }
     public function eat(){
         echo "I am eating \n";
     }
@@ -16,7 +23,7 @@ class Animal{
     }
 
     public function greet(){
-        echo "Mewo \n";
+        echo " {$this->name} says Mewo \n";
     }
 }
 
@@ -29,15 +36,15 @@ class Fantik extends Animal{
     }
 
     public function greet(){
-        echo "Assalamualaikum bhai \n";
+        echo " {$this->name} Assalamualaikum bhai \n";
     }
 }
 
-$h1 = new Animal();
+$h1 = new Animal("Tom");
 
 $h1->run();
 $h1->greet();
 
-$w = new Fantik();
+$w = new Fantik("Jimmy");
 $w->sleeping();
 $w->greet();
