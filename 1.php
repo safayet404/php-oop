@@ -34,7 +34,7 @@ class Cat{
 
 class Dog{
     function sayHi(){
-        echo "Woooooooooooof\n";
+        echo "Woof Gheu Gheu\n";
     }
 }
 
