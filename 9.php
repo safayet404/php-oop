@@ -29,6 +29,8 @@ interface BaseHuman extends BaseAnimal{
 }
 
 class Human implements BaseHuman{
+
+     
     function isAlive()
     {
        echo "Yes ,this animal is alive";
@@ -49,3 +51,6 @@ class Human implements BaseHuman{
         echo "Hello World!";
     }
 }
+
+$h = new Human("");
+$h->isAlive();
