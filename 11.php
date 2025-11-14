@@ -11,7 +11,7 @@ class MyClass                    {
     const CITY = "Dhaka from class\n";
 
     function sayHi(){
-        echo "\nHi from ".self::CITY;
+        echo "\nHi from ".$this::CITY;
     }
 }
 
