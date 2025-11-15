@@ -39,7 +39,7 @@ class Student{
 
 $s = new Student();
 
-$s->setAge("25");
+$s->setAge(25);
 echo $s->getAge();
 
 
