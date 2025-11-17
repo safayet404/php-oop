@@ -44,9 +44,13 @@ class MotorCycle{
         $this->capacity = $capacity;
     }
 
-    function __get($name)
+    function __get($prop)
     {
-        echo $this->$name;
+        return $this->$prop;
+    }
+
+    function __set($prop,$value){
+        $this->$prop = $value;
     }
 
 }
@@ -54,4 +58,6 @@ class MotorCycle{
 $pulsar = new MotorCycle('150cc','16ltr','40kmph');
 
 echo $pulsar->getDisplacement();
+
+$pulsar->displacement = "\n165cc \n";
 echo $pulsar->displacement;
