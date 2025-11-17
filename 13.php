@@ -1,6 +1,6 @@
 <?php
 
-class DistrictCollection implements IteratorAggregate{
+class DistrictCollection implements IteratorAggregate,Countable{
     private $districts;
 
     function __construct()
@@ -22,6 +22,10 @@ class DistrictCollection implements IteratorAggregate{
     {
         return new ArrayIterator($this->districts);
     }
+    function count(): int
+    {
+       return count($this->districts);
+    }
 
 }
 
@@ -34,6 +38,7 @@ $districts->add("Kishoreganj");
 $districts->add("Katadia");
 $districts->add("rajshahi");
 $districts->add("Sylhet");
+$districts->add("Chottogram");
 
 
 
@@ -41,3 +46,5 @@ foreach($districts as $_dis)
 {
     echo $_dis."\n";
 }
+
+echo count($districts);
