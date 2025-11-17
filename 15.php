@@ -1,3 +1,11 @@
+<!-- Early binding and late binding 
+
+For early binding it is self::function()
+for late binding it is static::function()
+
+
+-->
+
 <?php
 
 class Planet{
