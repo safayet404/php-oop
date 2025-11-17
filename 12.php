@@ -12,39 +12,52 @@ class Student{
         $this->class = $class;
     }
 
-    function getName(){
-        return $this->name;
+    public function __get($prop)
+    {
+        return $this->$prop;
+    }
+      public function __set($prop,$value)
+    {
+         $this->$prop = $value;
     }
 
-    function setName($name){
-        $this->name = $name;
-    }  
-    function getAge(){
-        return $this->age;
-    }
+    // function getName(){
+    //     return $this->name;
+    // }
 
-    function setAge($age){
-        $this->age = $age;
-    }
+    // function setName($name){
+    //     $this->name = $name;
+    // }  
+    // function getAge(){
+    //     return $this->age;
+    // }
 
-    function getClass(){
-        return $this->class;
-    }
+    // function setAge($age){
+    //     $this->age = $age;
+    // }
 
-    function setClass($class){
-        $this->class = $class;
-    }
+    // function getClass(){
+    //     return $this->class;
+    // }
+
+    // function setClass($class){
+    //     $this->class = $class;
+    // }
 
 }
 
-$s = new Student();
-
-$s->setAge(25);
-echo $s->getAge();
+$s = new Student("rahim",'20',"5");
 
 
-$s->setName("\nSafayet Hossain\n");
-echo $s->getName();
+$s->name = "kamal";
+echo $s->name;
 
-$s->setClass("Hons Pass korsi bhai \n");
-echo $s->getClass();
+// $s->setAge(25);
+// echo $s->getAge();
+
+
+// $s->setName("\nSafayet Hossain\n");
+// echo $s->getName();
+
+// $s->setClass("Hons Pass korsi bhai \n");
+// echo $s->getClass();
