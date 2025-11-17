@@ -60,4 +60,6 @@ $pulsar = new MotorCycle('150cc','16ltr','40kmph');
 echo $pulsar->getDisplacement();
 
 $pulsar->displacement = "\n165cc \n";
-echo $pulsar->displacement;
+echo $pulsar->displacement."\n";
+echo $pulsar->capacity."\n";
+echo $pulsar->mileage."\n";
