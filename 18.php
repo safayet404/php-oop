@@ -23,7 +23,7 @@ class MySQLServer implements NetworkStorage {
 
     function getName()
     {
-       return "MySQL";
+       return "MySQL DB";
     }
 }
 
