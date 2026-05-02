@@ -8,7 +8,7 @@ echo CITY;
 
 
 class MyClass                    {
-    const CITY = "Dhaka from class\n";
+    const CITY = "Dacca from class\n";
 
     function sayHi(){
         echo "\nHi from ".$this::CITY;
